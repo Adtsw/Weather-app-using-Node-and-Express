@@ -14,7 +14,7 @@ Form.addEventListener('submit', (e) => {
     const SearchedTerm = input.value;
     //console.log(SearchedTerm)
 
-        fetch(`http://localhost:3000/weather?address=${SearchedTerm}`).then((response) => {
+        fetch(`/weather?address=${SearchedTerm}`).then((response) => {
     response.json().then((data) => {
         if(data.error){
             console.log(data.error)

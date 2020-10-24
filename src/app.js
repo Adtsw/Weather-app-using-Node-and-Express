@@ -10,6 +10,7 @@ const helpHtml = path.join(__dirname, '../public')
 const indexPath = path.join(__dirname, '../templates/views')
 const headerPath = path.join(__dirname, '../templates/partials')
 const app = express()
+const port = process.env.PORT;
 
 // app.engine('hbs', exphbs({
 //     layoutsDir: `${__dirname}/views`
@@ -86,6 +87,6 @@ app.get('/help/*', (req, res) => {
     })
 })
 
-app.listen(3000, () => {
+app.listen(port, () => {
     console.log('This is Express')
 })
