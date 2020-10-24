@@ -82,7 +82,7 @@ app.get('*', (req, res) => {
 
 app.get('/help/*', (req, res) => {
     res.render('404', {
-        title: '405',
+        title: '404',
         errorMsg: 'Help article not found'
     })
 })
