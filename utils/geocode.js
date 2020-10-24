@@ -7,7 +7,7 @@ const geocode = (place, callback) => {
         if(error){
             callback('Unable to process the request', undefined)
         } else if(body.features.length === 0){
-            callback('Unpad, spelling bhi thik kar le', undefined)
+            callback('Error in the name of the place', undefined)
         }else{
             callback(undefined,
                 {
